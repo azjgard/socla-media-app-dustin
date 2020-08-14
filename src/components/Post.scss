@@ -1,0 +1,53 @@
+.post--container {
+  background-color: #fff;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 3px 3px 3px #efefef;
+
+  @media screen and (max-width: 600px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .post--header {
+    display: flex;
+
+    $profile-size: 40px;
+    .profile-picture {
+      width: $profile-size;
+      height: $profile-size;
+      border-radius: 50%;
+    }
+
+    .name-container {
+      margin-left: 10px;
+      .name {
+        text-align: left;
+        color: #275c98;
+      }
+    }
+
+    .date-container {
+      display: flex;
+      .date {
+        margin-right: 10px;
+        font-size: 14px;
+        color: darkgray;
+      }
+    }
+
+    .actions-container {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
